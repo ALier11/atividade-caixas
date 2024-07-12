@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de tamanho de caixa</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            box-sizing: content-box;
+            background-color: rgb(0, 191, 255);
+        }
+        .border-box {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">caixinha</div>
+        <div class="border-box">outra caixinha</div>
+    </div>
+    <p>no box-sizing Content-Box o tamanho total da caixa será a soma da largura, altura, 
+        padding, borda e margem, então: tamanho total de 190px por 190px.
+        Ja na border box o padding e a borda estão dentro da largura e altura, Portanto, a 
+        segunda caixa terá um tamanho total de 150px por 150px.
+
+    </p>
+</body>
+</html>
